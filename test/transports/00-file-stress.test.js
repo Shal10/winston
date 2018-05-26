@@ -123,7 +123,7 @@ describe('File (stress)', function () {
       read: 0
     };
 
-    const msgs = new Array(10).fill().map(() => ({
+    const msgs = new Array(100).fill().map(() => ({
       counter: ++counters.write,
       message: 'a'.repeat(16384 - os.EOL.length - 1)
     }));
